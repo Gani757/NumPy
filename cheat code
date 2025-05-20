@@ -1,0 +1,76 @@
+🧠 NumPy Cheat Sheet – Quick Reference
+🔹 1. Importing NumPy
+import numpy as np
+
+🔹 2. Creating Arrays
+np.array([1, 2, 3])                    # From list  
+np.zeros((2, 3))                       # All zeros  
+np.ones((3, 2))                        # All ones  
+np.full((2, 2), 7)                     # Constant  
+np.eye(3)                              # Identity matrix  
+np.arange(0, 10, 2)                    # Range with step  
+np.linspace(0, 1, 5)                   # Evenly spaced  
+np.random.rand(2, 2)                   # Random [0,1)  
+np.random.randint(1, 10, (2, 3))       # Random ints  
+
+🔹 3. Inspecting Arrays
+arr.shape          # Dimensions  
+arr.ndim           # Number of dimensions  
+arr.size           # Total number of elements  
+arr.dtype          # Data type of elements  
+
+🔹 4. Array Reshaping & Flattening
+arr.reshape(3, 2)      # Change shape  
+arr.ravel()            # Flatten (1D)  
+arr.T                  # Transpose  
+
+🔹 5. Indexing & Slicing
+arr[0, 1]              # Access element  
+arr[:, 0]              # First column  
+arr[1:3, :]            # Rows 1 and 2  
+arr[::2]               # Every second element  
+
+🔹 6. Array Math
+arr + 5  
+arr1 + arr2  
+arr1 * arr2  
+np.add(arr1, arr2)  
+np.subtract(arr1, arr2)  
+np.multiply(arr1, arr2)  
+np.divide(arr1, arr2)  
+np.sqrt(arr)  
+np.power(arr, 2)  
+
+🔹 7. Statistical Operations
+np.mean(arr)  
+np.median(arr)  
+np.std(arr)  
+np.var(arr)  
+np.min(arr)  
+np.max(arr)  
+np.sum(arr)  
+np.argmax(arr)         # Index of max  
+np.argmin(arr)         # Index of min  
+
+🔹 8. Boolean Masking & Filtering
+arr > 5                      # Boolean array  
+arr[arr > 5]                 # Filtered values  
+np.where(arr > 5, 1, 0)      # Replace using condition  
+
+🔹 9. Set Operations
+np.unique(arr)  
+np.intersect1d(arr1, arr2)  
+np.union1d(arr1, arr2)  
+np.setdiff1d(arr1, arr2)  
+
+🔹 10. Array Copying
+arr.copy()            # Deep copy  
+
+🔹 11. Saving and Loading
+np.save('file.npy', arr)         
+np.load('file.npy')              
+np.savetxt('file.csv', arr, delimiter=',')  
+
+🔹 12. Special Arrays
+np.diag([1, 2, 3])              # Diagonal matrix  
+np.tile([1, 2], (2, 2))         # Repeat pattern  
