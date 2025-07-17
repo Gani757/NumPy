@@ -26,10 +26,10 @@ arr.ravel()            # Flatten (1D)
 arr.T                  # Transpose  
 
 🔹 5. Indexing & Slicing
-arr[0, 1]              # Access element --- arr[row index,column index]
-arr[:, 0]              # First column  
-arr[1:3, :]            # Rows 1 and 2  by slicing 
-arr[::2]               # Every second element  
+arr[0, 1]              # Element at row 0, col 1 --- arr[row index,column index]
+rr[:, 1]               # All rows of column 1
+arr[1:3, :]            # Rows 1 and 2   --slicing 
+arr[::2]               # Every second element  --arr[start:end:step]
 np.where(arr)          # index position 
 
 🔹 6. Array Math
@@ -51,8 +51,10 @@ np.var(arr)
 np.min(arr)  
 np.max(arr)  
 np.sum(arr)  
+np.matmul()
 np.argmax(arr)         # Index of max  
 np.argmin(arr)         # Index of min  
+
 
 🔹 8. 🎯 Percentile Calculation
 np.percentile(arr, 25)    # 25th percentile (Q1)
