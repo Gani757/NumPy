@@ -3,7 +3,8 @@
 import numpy as np
 
 🔹 2. Creating Arrays
-np.array([1, 2, 3])                    # From list  
+np.array([1, 2, 3])                    # Create 1D array
+np.array([[1, 2]])                     # 2D array
 np.zeros((2, 3))                       # All zeros  
 np.ones((3, 2))                        # All ones  
 np.full((2, 2), 7)                     # Constant  
