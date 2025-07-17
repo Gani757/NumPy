@@ -26,10 +26,11 @@ arr.ravel()            # Flatten (1D)
 arr.T                  # Transpose  
 
 🔹 5. Indexing & Slicing
-arr[0, 1]              # Access element  
+arr[0, 1]              # Access element --- arr[row index,column index]
 arr[:, 0]              # First column  
-arr[1:3, :]            # Rows 1 and 2  
+arr[1:3, :]            # Rows 1 and 2  by slicing 
 arr[::2]               # Every second element  
+np.where(arr)          # index position 
 
 🔹 6. Array Math
 arr + 5  
