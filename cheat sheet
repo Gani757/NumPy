@@ -52,25 +52,45 @@ np.sum(arr)
 np.argmax(arr)         # Index of max  
 np.argmin(arr)         # Index of min  
 
-🔹 8. Boolean Masking & Filtering
+🔹 8. 🎯 Percentile Calculation
+np.percentile(arr, 25)    # 25th percentile (Q1)
+np.percentile(arr, 50)    # 50th percentile (Median)
+np.percentile(arr, 75)    # 75th percentile (Q3)
+np.percentile(arr, [25, 50, 75])  # All at once
+
+🔹 9. Boolean Masking & Filtering
 arr > 5                      # Boolean array  
 arr[arr > 5]                 # Filtered values  
 np.where(arr > 5, 1, 0)      # Replace using condition  
 
-🔹 9. Set Operations
+🔹 10. Set Operations
 np.unique(arr)  
 np.intersect1d(arr1, arr2)  
 np.union1d(arr1, arr2)  
 np.setdiff1d(arr1, arr2)  
 
-🔹 10. Array Copying
+🔹 11. Array Copying
 arr.copy()            # Deep copy  
 
-🔹 11. Saving and Loading
+🔹 12. Saving and Loading
 np.save('file.npy', arr)         
 np.load('file.npy')              
 np.savetxt('file.csv', arr, delimiter=',')  
 
-🔹 12. Special Arrays
+🔹 13. Special Arrays
 np.diag([1, 2, 3])              # Diagonal matrix  
 np.tile([1, 2], (2, 2))         # Repeat pattern  
+
+
+
+📌 Quick Reference: Descriptive Statistics
+Operation	Function
+Minimum value	np.min(arr)
+Maximum value	np.max(arr)
+Mean	np.mean(arr)
+Median	np.median(arr)
+Mode	from scipy.stats import mode
+Percentile	np.percentile(arr, p)
+Standard Deviation	np.std(arr)
+Variance	np.var(arr)
+
