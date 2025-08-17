@@ -51,7 +51,7 @@ np.var(arr)
 np.min(arr)  
 np.max(arr)  
 np.sum(arr)  
-np.matmul()
+np.matmul()            # matrix multiplication
 np.argmax(arr)         # Index of max  
 np.argmin(arr)         # Index of min  
 
